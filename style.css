@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    letter-spacing: 10px;
+    font-size: 3rem;
+}
+
+/* hero section con la tua foto */
+header {
+    background-image: linear-gradient(transparent, purple, black), url(https://blog-media.but.fr/wp-content/uploads/2024/08/01-cinema-plein-air-terrasse-1024x1024.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* navbar */
+nav {
+    z-index: 999;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+/* card dei film */
+.card-custom {
+    width: 18rem;
+}
+
+/* bottone */
+.btn-custom {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.btn-custom:hover {
+    background-color: white;
+    color: black;
+}
+
+/* footer */
+footer ul {
+    padding: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+/* telefono */
+@media screen and (max-width: 670px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

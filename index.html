@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Cinema</title>
+
+    <link rel="icon" href="data:,">
+
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <!-- style css -->
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="container-fluid position-fixed top-0 w-100 bg-dark">
+        <div class="row">
+            <div class="col-12">
+                <ul class="d-flex justify-content-center m-0 py-3 ps-0">
+                    <li><a href="#">Home</a></li>
+                    <li class="mx-5"><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header/hero section -->
+    <header class="container-fluid">
+        <div class="row vh-100 justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-white text-center">Blog Cinema</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- sezione film -->
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-white text-center my-5">
+                <h2>Tutti gli articoli</h2>
+            </div>
+
+            <!-- film 1 -->
+            <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <div class="card-custom bg-dark text-white p-3 rounded">
+                    <a href="https://www.rottentomatoes.com/" target="_blank">
+                        <img src="https://th.bing.com/th/id/OIP.hKjpJZLv1Xb7HclgJ_3rSwHaJ4?w=208&h=277&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-100 mb-3" alt="locandina film Mufasa">
+                    </a>
+                    <h5>Mufasa: Il Re Leone</h5>
+                    <p>Animazione - La storia di come Mufasa, un cucciolo orfano, diventa il re delle Terre del Branco.</p>
+                </div>
+            </div>
+
+            <!-- film 2 -->
+            <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <div class="card-custom bg-dark text-white p-3 rounded">
+                    <a href="https://www.rottentomatoes.com/" target="_blank">
+                        <img src="https://www.bing.com/th/id/OIP.ZhME5AayDxOCp8KJ1tp0tQHaLw?w=193&h=307&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" class="w-100 mb-3" alt="locandina film di Charlie Chaplin">
+                    </a>
+                    <h5>Vita da cani</h5>
+                    <p>Commedia - Charlot, un vagabondo senza un soldo, trova un amico nel cane Scraps.</p>
+                </div>
+            </div>
+
+            <!-- film 3 -->
+            <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <div class="card-custom bg-dark text-white p-3 rounded">
+                    <a href="https://www.rottentomatoes.com/" target="_blank">
+                        <img src="https://th.bing.com/th/id/OIP.JobzcNSaYM-pnum_vvwL5QHaLH?w=132&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-100 mb-3" alt="locandina film Odissea">
+                    </a>
+                    <h5>Odissea</h5>
+                    <p>Avventura - Il lungo viaggio di Ulisse per tornare a casa dopo la guerra di Troia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- form -->
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-white text-center my-5">
+                <h2>Lavora con noi</h2>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <form class="bg-secondary text-white rounded-4 p-5">
+
+                    <div class="mb-3">
+                        <label for="email" class="d-block mb-1">Email</label>
+                        <input type="email" id="email" class="w-100">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="password" class="d-block mb-1">Password</label>
+                        <input type="password" id="password" class="w-100">
+                    </div>
+
+                    <button type="button" class="btn-custom" data-bs-toggle="modal" data-bs-target="#grazieModal">
+                        Invia
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal di Bootstrap -->
+    <div class="modal fade" id="grazieModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Grazie per averci contattato</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Ti risponderemo il prima possibile.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid bg-secondary text-white mt-5">
+        <div class="row justify-content-around py-4">
+            <div class="col-12 col-md-3">
+                <h5>Chi siamo</h5>
+                <p>Blog Cinema di Maria Rossi, appassionato di cinema dal 2010.</p>
+            </div>
+            <div class="col-12 col-md-3"> 
+                <h5>Contatti</h5>
+                <ul>
+                    <li>P.IVA: 12345678901</li>
+                    <li>Tel: 3333333333</li>
+                    <li>Email: info@blogcinema.it</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <h5>Social</h5>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js Bootstrap (serve per la modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
